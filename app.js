@@ -3,7 +3,7 @@ var express = require('express');
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var dev_db_url = 'mongodb+srv://cooluser:coolpassword@cluster0-mbdj7.mongodb.net/local_library?retryWrites=true';
+var dev_db_url = 'mongodb+srv://root:root123@cluster0-jef2u.azure.mongodb.net/test?retryWrites=true&w=majority';
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 mongoose.connect(mongoDB, { useNewUrlParser: true });
